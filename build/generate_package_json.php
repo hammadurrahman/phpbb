@@ -47,7 +47,7 @@ usort($older_verions, function($version_a, $version_b)
 {
 	return phpbb_version_compare($version_b, $version_a);
 });
-
+$json_data->metadata->current_version_date = '';
 // Set metadata
 $json_data->metadata->current_version = $current_version;
 $json_data->metadata->current_version_date = date('Y-m-d');
